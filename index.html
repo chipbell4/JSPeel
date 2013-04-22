@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Peel Test</title>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="jsPeel.js"></script>
+		<style>
+		.peel {
+			width: 10em;
+			height: 10em;
+			margin-bottom: 2em;
+			color: white;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		.red {
+			background-color: red;
+		}
+		
+		.blue {
+			background-color: blue;
+		}
+		
+		.green {
+			background-color: green;
+		}
+		
+		.fold {
+			box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.4);
+		}
+		</style>
+	</head>
+	<body>
+		<div class="peel red">Hello</div>
+		<div class="peel blue">JS</div>
+		<div class="peel green">Peel</div>
+		<script>
+		$(document).ready(function(){
+			$(".peel").peel();
+		});
+		</script>
+	</body>
+</html>
